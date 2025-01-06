@@ -15,17 +15,19 @@ A Ruby-based Command-Line Interface (CLI) application to manage your personal wa
 
 ```
 movie_watchlist/
-├── app.rb                # Main application file
+├── app.rb                # Entry point for the application
 ├── config/
-│   └── api_keys.rb       # Contains OMDb API key
-├── models/
-│   ├── movie.rb          # Handles individual movie objects and API requests
-│   └── watchlist.rb      # Manages the user's movie watchlist
-├── views/
-│   └── movie_list_view.rb # Handles user interface and menu options
-├── Gemfile               # Lists dependencies
-├── Gemfile.lock          # Tracks gem versions
-└── README.md             # Project documentation
+│   └── api_keys.rb       # API key configurations
+├── lib/                  # Core application logic
+│   ├── models/
+│   │   ├── movie.rb      # Movie class to handle movie data
+│   │   └── watchlist.rb  # Watchlist class to manage the list of movies
+│   └── views/
+│       └── movie_list_view.rb # CLI logic for user interaction
+├── Gemfile               # Gem dependencies
+├── Gemfile.lock          # Version lock for dependencies
+├── README.md             # Project documentation
+└── LICENSE               # Licensing information
 ```
 
 ---
